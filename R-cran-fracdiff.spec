@@ -5,7 +5,7 @@ Summary(pl):	U³amkowo ró¿nicowane modele ARIMA (p,d,q)
 Name:		R-cran-%{modulename}
 Version:	1.1r1
 Release:	1
-License:	GPL version 2 or later
+License:	GPL v2+
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
 # Source0-md5:	e1f624b063789f21c74d85ebaeda60fa
