@@ -4,15 +4,15 @@ Summary:	Fractionally differenced ARIMA (p,d,q) models
 Summary(pl):	U³amkowo ró¿nicowane modele ARIMA (p,d,q)
 Name:		R-cran-%{modulename}
 Version:	1.1r1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
 # Source0-md5:	e1f624b063789f21c74d85ebaeda60fa
-BuildRequires:	R-base >= 2.0.0
+BuildRequires:	R-base >= 2.4.0
 BuildRequires:	blas-devel
 BuildRequires:	gcc-g77
-Requires(post,postun):	R-base >= 2.0.0
+Requires(post,postun):	R-base >= 2.4.0
 Requires(post,postun):	perl-base
 Requires(post,postun):	textutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -42,12 +42,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 (cd %{_libdir}/R/library; umask 022; cat */CONTENTS > ../doc/html/search/index.txt
- R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --htmllist)
+ R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --index)
 
 %postun
 if [ -f %{_libdir}/R/bin/Rcmd ];then
 	(cd %{_libdir}/R/library; umask 022; cat */CONTENTS > ../doc/html/search/index.txt
-	R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --htmllist)
+	R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --index)
 fi
 
 %files
