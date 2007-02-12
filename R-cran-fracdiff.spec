@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	fracdiff
 Summary:	Fractionally differenced ARIMA (p,d,q) models
-Summary(pl):	U�amkowo r�nicowane modele ARIMA (p,d,q)
+Summary(pl.UTF-8):   Ułamkowo różnicowane modele ARIMA (p,d,q)
 Name:		R-cran-%{modulename}
 Version:	1.1r1
 Release:	2
@@ -22,9 +22,9 @@ Maximum likelihood estimation of the parameters of a fractionally
 differenced ARIMA(p,d,q) model (Haslett and Raftery, Appl.Statistics,
 1989).
 
-%description -l pl
-Estymacja maksymalnego prawdopodobie�stwa parametr�w u�amkowo
-r�nicowanego modelu ARIMA(p,d,q) (Haslett i Raftery, "Appl.
+%description -l pl.UTF-8
+Estymacja maksymalnego prawdopodobieństwa parametrów ułamkowo
+różnicowanego modelu ARIMA(p,d,q) (Haslett i Raftery, "Appl.
 Statistics", 1989).
 
 %prep
