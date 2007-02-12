@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	fracdiff
 Summary:	Fractionally differenced ARIMA (p,d,q) models
-Summary(pl.UTF-8):   Ułamkowo różnicowane modele ARIMA (p,d,q)
+Summary(pl.UTF-8):	Ułamkowo różnicowane modele ARIMA (p,d,q)
 Name:		R-cran-%{modulename}
 Version:	1.1r1
 Release:	2
