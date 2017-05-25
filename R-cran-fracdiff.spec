@@ -4,7 +4,7 @@ Summary:	Fractionally differenced ARIMA (p,d,q) models
 Summary(pl.UTF-8):	Ułamkowo różnicowane modele ARIMA (p,d,q)
 Name:		R-cran-%{modulename}
 Version:	1.4r2
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
